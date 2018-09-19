@@ -75,10 +75,6 @@ describe('MdcFab', () => {
       expect(testComponent.clickCount).toBe(1);
     });
 
-    it('#should preserve any given tabIndex', () => {
-      expect(buttonDebugElement.nativeElement.tabIndex).toBe(2);
-    });
-
     it('#should apply class `bottomLeft`', () => {
       testComponent.myPosition = 'bottomLeft';
       fixture.detectChanges();
